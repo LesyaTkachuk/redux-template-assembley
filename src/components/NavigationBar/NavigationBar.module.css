@@ -1,0 +1,40 @@
+.navigationBar {
+  display: flex;
+  flex-direction: column;
+}
+.navigationItem {
+  margin-bottom: 20px;
+}
+
+.navigationLink {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--black-font-color);
+  transition: all 200ms ease;
+}
+
+.activeNavigationLink {
+  color: rgb(96, 131, 248);
+}
+
+@media (min-width: 768px) {
+  .navigationLink {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .navigationBar {
+    flex-direction: row;
+  }
+
+  .navigationLink {
+    font-size: 16px;
+  }
+  .navigationItem {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
